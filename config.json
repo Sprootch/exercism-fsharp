@@ -342,18 +342,10 @@
         "slug": "beer-song",
         "name": "Beer Song",
         "uuid": "0ea0d92f-5510-4ba9-b419-3f5ad029b74f",
-        "practices": [
-          "ranges",
-          "string-formatting"
-        ],
-        "prerequisites": [
-          "lists",
-          "numbers",
-          "ranges",
-          "string-formatting",
-          "strings"
-        ],
-        "difficulty": 3
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
+        "status": "deprecated"
       },
       {
         "slug": "kindergarten-garden",
@@ -1570,11 +1562,9 @@
         "name": "Scale Generator",
         "uuid": "02a8e767-7449-48a9-8d6b-f2cac708de50",
         "practices": [],
-        "prerequisites": [
-          "for-loops",
-          "strings"
-        ],
-        "difficulty": 5
+        "prerequisites": [],
+        "difficulty": 5,
+        "status": "deprecated"
       },
       {
         "slug": "spiral-matrix",
@@ -1591,6 +1581,23 @@
           "numbers"
         ],
         "difficulty": 5
+      },
+      {
+        "slug": "flower-field",
+        "name": "Flower Field",
+        "uuid": "3ff1f4e8-0749-4e57-8228-e42b8d073f3f",
+        "practices": [
+          "string-formatting"
+        ],
+        "prerequisites": [
+          "chars",
+          "if-then-else-expressions",
+          "lists",
+          "records",
+          "string-formatting",
+          "strings"
+        ],
+        "difficulty": 7
       },
       {
         "slug": "matching-brackets",
@@ -1612,18 +1619,10 @@
         "slug": "minesweeper",
         "name": "Minesweeper",
         "uuid": "9e3fc78d-ac3b-4195-ad4c-9f99b0ee2678",
-        "practices": [
-          "string-formatting"
-        ],
-        "prerequisites": [
-          "chars",
-          "if-then-else-expressions",
-          "lists",
-          "records",
-          "string-formatting",
-          "strings"
-        ],
-        "difficulty": 7
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7,
+        "status": "deprecated"
       },
       {
         "slug": "rectangles",
@@ -2086,6 +2085,19 @@
         "difficulty": 3
       },
       {
+        "slug": "relative-distance",
+        "name": "Relative Distance",
+        "uuid": "bc7561ce-c738-46ef-a749-68c352728aee",
+        "practices": [
+          "lists"
+        ],
+        "prerequisites": [
+          "if-then-else-expressions",
+          "lists"
+        ],
+        "difficulty": 5
+      },
+      {
         "slug": "tree-building",
         "name": "Tree Building",
         "uuid": "a53fa908-f983-4da5-b1c1-3989bd2ea2f9",
@@ -2117,6 +2129,144 @@
           "lists"
         ],
         "difficulty": 5
+      },
+      {
+        "slug": "resistor-color",
+        "name": "Resistor Color",
+        "uuid": "bd2bd26c-6eab-411d-8472-7643cb86c6c9",
+        "practices": [
+          "lists"
+        ],
+        "prerequisites": [
+          "numbers",
+          "lists"
+        ],
+        "difficulty": 1
+      },
+      {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "4ecde4e3-308c-42e9-bb41-0e746d74b526",
+        "practices": [
+          "numbers"
+        ],
+        "prerequisites": [
+          "numbers",
+          "lists"
+        ],
+        "difficulty": 1
+      },
+      {
+        "slug": "square-root",
+        "name": "Square Root",
+        "uuid": "2c85587e-9b6c-4edf-9f05-e600489a9074",
+        "practices": [
+          "while-loops"
+        ],
+        "prerequisites": [
+          "numbers"
+        ],
+        "difficulty": 1
+      },
+      {
+        "slug": "eliuds-eggs",
+        "name": "Eliud's Eggs",
+        "uuid": "d5761ed1-a342-45eb-a2b3-95c7bc175046",
+        "practices": [
+          "bit-manipulation"
+        ],
+        "prerequisites": [
+          "bit-manipulation",
+          "numbers"
+        ],
+        "difficulty": 2
+      },
+      {
+        "slug": "knapsack",
+        "name": "Knapsack",
+        "uuid": "5bfffdf2-95d9-4794-b703-340c253400b2",
+        "practices": [
+          "recursion"
+        ],
+        "prerequisites": [
+          "recursion",
+          "records",
+          "numbers"
+        ],
+        "difficulty": 5
+      },
+      {
+        "slug": "bottle-song",
+        "name": "Bottle Song",
+        "uuid": "05f6895a-b770-4a07-8db8-3787adf5fdf9",
+        "practices": [
+          "ranges",
+          "string-formatting"
+        ],
+        "prerequisites": [
+          "lists",
+          "numbers",
+          "ranges",
+          "string-formatting",
+          "strings"
+        ],
+        "difficulty": 3
+      },
+      {
+        "slug": "resistor-color-trio",
+        "name": "Resistor Color Trio",
+        "uuid": "6f58712b-8b74-4b4b-b6b7-1237dd717c04",
+        "practices": [
+          "string-formatting"
+        ],
+        "prerequisites": [
+          "numbers",
+          "lists",
+          "strings"
+        ],
+        "difficulty": 3
+      },
+      {
+        "slug": "killer-sudoku-helper",
+        "name": "Killer Sudoku Helper",
+        "uuid": "beb3f222-54b2-459c-9704-f2e6516542bb",
+        "practices": [
+          "lists"
+        ],
+        "prerequisites": [
+          "lists",
+          "recursion"
+        ],
+        "difficulty": 5
+      },
+      {
+        "slug": "state-of-tic-tac-toe",
+        "name": "State of Tic-Tac-Toe",
+        "uuid": "4cb569ac-609b-49fd-a8cb-3da0be698c4c",
+        "practices": [
+          "multi-dimensional-arrays",
+          "result"
+        ],
+        "prerequisites": [
+          "multi-dimensional-arrays",
+          "chars",
+          "result"
+        ],
+        "difficulty": 5
+      },
+      {
+        "slug": "satellite",
+        "name": "Satellite",
+        "uuid": "bcfeb5b7-08d3-4039-95b2-ebda6b7288aa",
+        "practices": [
+          "recursion"
+        ],
+        "prerequisites": [
+          "recursion",
+          "discriminated-unions",
+          "numbers"
+        ],
+        "difficulty": 7
       }
     ],
     "foregone": [
@@ -2124,7 +2274,8 @@
       "nucleotide-codons",
       "paasio",
       "point-mutations",
-      "counter"
+      "counter",
+      "micro-blog"
     ]
   },
   "concepts": [

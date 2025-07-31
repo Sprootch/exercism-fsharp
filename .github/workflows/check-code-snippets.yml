@@ -11,15 +11,15 @@ on:
 
 jobs:
   check:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+        uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@6bd8b7f7774af54e05809fcc5431931b3eb1ddee
+        uses: actions/setup-dotnet@bf4cd79173c0290c09af17cf9003ca2f32edea40
         with:
-          dotnet-version: "7.0.100"
+          dotnet-version: "9.0.101"
 
       - name: Validate Code Snippets
-        run: pwsh ./check-code-snippets.ps1
+        run: pwsh ./bin/check-code-snippets.ps1

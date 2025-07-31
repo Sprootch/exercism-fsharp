@@ -11,10 +11,14 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
-      - uses: actions/setup-dotnet@6bd8b7f7774af54e05809fcc5431931b3eb1ddee
+      - name: Checkout code
+        uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938
+
+      - uses: actions/setup-dotnet@bf4cd79173c0290c09af17cf9003ca2f32edea40
         with:
-          dotnet-version: "8.0.200"
-      - run: pwsh ./test.ps1
+          dotnet-version: "9.0.101"
+
+      - name: Run tests
+        run: pwsh ./bin/test.ps1
