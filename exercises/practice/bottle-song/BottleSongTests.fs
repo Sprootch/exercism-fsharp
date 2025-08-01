@@ -7,34 +7,34 @@ open BottleSong
 
 [<Fact>]
 let ``First generic verse`` () =
-    let expected = 
+    let expected =
         [ "Ten green bottles hanging on the wall,";
           "Ten green bottles hanging on the wall,";
           "And if one green bottle should accidentally fall,";
           "There'll be nine green bottles hanging on the wall." ]
     recite 10 1 |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Last generic verse`` () =
-    let expected = 
+    let expected =
         [ "Three green bottles hanging on the wall,";
           "Three green bottles hanging on the wall,";
           "And if one green bottle should accidentally fall,";
           "There'll be two green bottles hanging on the wall." ]
     recite 3 1 |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Verse with 2 bottles`` () =
-    let expected = 
+    let expected =
         [ "Two green bottles hanging on the wall,";
           "Two green bottles hanging on the wall,";
           "And if one green bottle should accidentally fall,";
           "There'll be one green bottle hanging on the wall." ]
     recite 2 1 |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Verse with 1 bottle`` () =
-    let expected = 
+    let expected =
         [ "One green bottle hanging on the wall,";
           "One green bottle hanging on the wall,";
           "And if one green bottle should accidentally fall,";
@@ -43,7 +43,7 @@ let ``Verse with 1 bottle`` () =
 
 [<Fact(Skip = "Remove this Skip property to run this test")>]
 let ``First two verses`` () =
-    let expected = 
+    let expected =
         [ "Ten green bottles hanging on the wall,";
           "Ten green bottles hanging on the wall,";
           "And if one green bottle should accidentally fall,";
@@ -57,7 +57,7 @@ let ``First two verses`` () =
 
 [<Fact(Skip = "Remove this Skip property to run this test")>]
 let ``Last three verses`` () =
-    let expected = 
+    let expected =
         [ "Three green bottles hanging on the wall,";
           "Three green bottles hanging on the wall,";
           "And if one green bottle should accidentally fall,";
@@ -76,7 +76,7 @@ let ``Last three verses`` () =
 
 [<Fact(Skip = "Remove this Skip property to run this test")>]
 let ``All verses`` () =
-    let expected = 
+    let expected =
         [ "Ten green bottles hanging on the wall,";
           "Ten green bottles hanging on the wall,";
           "And if one green bottle should accidentally fall,";
@@ -127,4 +127,3 @@ let ``All verses`` () =
           "And if one green bottle should accidentally fall,";
           "There'll be no green bottles hanging on the wall." ]
     recite 10 10 |> should equal expected
-
