@@ -9,9 +9,9 @@ type GameError =
     | MoveMadeAfterGameWasDone
 
 let board =
-        array2D [ ['X'; 'X'; 'O'];
-                  ['O'; 'X'; 'X'];
-                  ['X'; 'O'; 'O'] ]
+        array2D [ [' '; ' '; ' '];
+                  ['X'; ' '; ' '];
+                  [' '; ' '; ' '] ]
 
 let rowWins =
     [ for row in 0 .. ((board |> Array2D.length2) - 1) ->

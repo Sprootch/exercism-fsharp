@@ -185,7 +185,7 @@ let ``Another draw`` () =
     let expected: Result<EndGameState, GameError> = Ok EndGameState.Draw
     gameState board |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Ongoing game: one move in`` () =
     let board =
         array2D [ [' '; ' '; ' '];
@@ -194,7 +194,7 @@ let ``Ongoing game: one move in`` () =
     let expected: Result<EndGameState, GameError> = Ok EndGameState.Ongoing
     gameState board |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Ongoing game: two moves in`` () =
     let board =
         array2D [ ['O'; ' '; ' '];
