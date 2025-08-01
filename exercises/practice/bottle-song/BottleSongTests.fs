@@ -41,7 +41,7 @@ let ``Verse with 1 bottle`` () =
           "There'll be no green bottles hanging on the wall." ]
     recite 1 1 |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``First two verses`` () =
     let expected =
         [ "Ten green bottles hanging on the wall,";
@@ -55,7 +55,7 @@ let ``First two verses`` () =
           "There'll be eight green bottles hanging on the wall." ]
     recite 10 2 |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Last three verses`` () =
     let expected =
         [ "Three green bottles hanging on the wall,";
@@ -74,7 +74,7 @@ let ``Last three verses`` () =
           "There'll be no green bottles hanging on the wall." ]
     recite 3 3 |> should equal expected
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``All verses`` () =
     let expected =
         [ "Ten green bottles hanging on the wall,";
