@@ -49,7 +49,7 @@ let ``Input with a number of columns that is not a multiple of three raises an e
           "    " ]
     convert rows |> should equal None
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Recognizes 110101100`` () =
     let rows =
         [ "       _     _        _  _ ";
@@ -58,7 +58,7 @@ let ``Recognizes 110101100`` () =
           "                           " ]
     convert rows |> should equal (Some "110101100")
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Garbled numbers in a string are replaced with ?`` () =
     let rows =
         [ "       _     _           _ ";
@@ -139,7 +139,7 @@ let ``Recognizes 9`` () =
           "   " ]
     convert rows |> should equal (Some "9")
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Recognizes string of decimal numbers`` () =
     let rows =
         [ "    _  _     _  _  _  _  _  _ ";
@@ -148,7 +148,7 @@ let ``Recognizes string of decimal numbers`` () =
           "                              " ]
     convert rows |> should equal (Some "1234567890")
 
-[<Fact(Skip = "Remove this Skip property to run this test")>]
+[<Fact>]
 let ``Numbers separated by empty lines are recognized. Lines are joined by commas.`` () =
     let rows =
         [ "    _  _ ";
